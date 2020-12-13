@@ -1,0 +1,13 @@
+.display {
+    text-align: left;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    min-width: 130px;
+}
+
+.display--gamover {
+    color: red;
+    border: 2px solid  rgb(231,154,255);
+}
