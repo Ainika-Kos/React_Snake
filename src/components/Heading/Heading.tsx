@@ -7,8 +7,8 @@ type Props = {
 
 const Heading = ({ text }: Props) => {
   return (
-    <div className="heading">
-      <h1>{text}</h1>
+    <div>
+      <h1 className="heading">{text}</h1>
     </div>
   );
 };
