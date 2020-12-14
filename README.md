@@ -1,5 +1,7 @@
 ## Try snake on page:
 
+https://github.com/Ainika-Kos/snake
+
 ## Snake explanation:
  - Snake can move
  - Snake can eat food
