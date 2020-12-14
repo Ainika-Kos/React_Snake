@@ -1,6 +1,6 @@
 ## Try snake on page:
 
-http://ainika-kos.github.io/github.io
+http://ainika-kos.github.io/snake
 
 ## Snake explanation:
  - Snake can move
