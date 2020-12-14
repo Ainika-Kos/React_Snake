@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap');
+
 .heading {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
     margin-bottom: 30px;
 }
