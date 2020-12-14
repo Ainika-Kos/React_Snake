@@ -102,12 +102,14 @@ export class Snake {
       (this.direction === Direction.RIGHT && direction === Direction.LEFT) ||
       (this.direction === Direction.LEFT && direction === Direction.RIGHT)
     ) {
-      this.direction = this.direction;
+      const dir = this.direction;
+      this.direction = dir;
     } else if (
       (this.direction === Direction.UP && direction === Direction.DOWN) ||
       (this.direction === Direction.DOWN && direction === Direction.UP)
     ) {
-      this.direction = this.direction;
+      const dir = this.direction;
+      this.direction = dir;
     } else {
       this.direction = direction;
       this.directions.push(this.direction);
@@ -126,7 +128,8 @@ export class Snake {
     let result: boolean = false;
     if (this.direction === Direction.RIGHT) {
       if (
-        this.isOnCell(this.cells[this.cells.length - 1].x + 1, this.cells[this.cells.length - 1].y)
+        this.isOnCell(this.cells[this.cells.length - 1].x + 1,
+          this.cells[this.cells.length - 1].y)
       ) {
         result = true;
       } else if (this.cells[this.cells.length - 1].x === this.boardWidth - 1) {
@@ -135,7 +138,8 @@ export class Snake {
     }
     if (this.direction === Direction.DOWN) {
       if (
-        this.isOnCell(this.cells[this.cells.length - 1].x, this.cells[this.cells.length - 1].y + 1)
+        this.isOnCell(this.cells[this.cells.length - 1].x,
+          this.cells[this.cells.length - 1].y + 1)
       ) {
         result = true;
       } else if (this.cells[this.cells.length - 1].y === this.boardHeight - 1) {
@@ -144,7 +148,8 @@ export class Snake {
     }
     if (this.direction === Direction.UP) {
       if (
-        this.isOnCell(this.cells[this.cells.length - 1].x, this.cells[this.cells.length - 1].y - 1)
+        this.isOnCell(this.cells[this.cells.length - 1].x,
+          this.cells[this.cells.length - 1].y - 1)
       ) {
         result = true;
       } else if (this.cells[this.cells.length - 1].y === 0) {
@@ -153,7 +158,8 @@ export class Snake {
     }
     if (this.direction === Direction.LEFT) {
       if (
-        this.isOnCell(this.cells[this.cells.length - 1].x - 1, this.cells[this.cells.length - 1].y)
+        this.isOnCell(this.cells[this.cells.length - 1].x - 1,
+          this.cells[this.cells.length - 1].y)
       ) {
         result = true;
       } else if (this.cells[this.cells.length - 1].x === 0) {

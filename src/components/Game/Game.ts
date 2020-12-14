@@ -43,7 +43,9 @@ export class Game {
       }
 
       for (let i = 0; i < 5; i++) {
-        this.food.push(coordinates[Math.floor(Math.random() * coordinates.length)]);
+        this
+          .food
+          .push(coordinates[Math.floor(Math.random() * coordinates.length)]);
       }
     } else {
       this.removeFood(snake); 
@@ -62,7 +64,8 @@ export class Game {
 
   removeFood(snake: Cell[]) {
     for (let i = 0; i < this.food.length; i++) {
-      if (snake.some((cell) => cell.x === this.food[i].x && cell.y === this.food[i].y)) {
+      if (snake.some((cell) => cell.x === this.food[i].x &&
+        cell.y === this.food[i].y)) {
         this.food.splice(i, 1);
       }
     }

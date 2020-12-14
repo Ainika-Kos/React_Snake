@@ -82,7 +82,8 @@ const chooseDirection = (e: KeyboardEvent): Direction | null => {
 };
 
 export function update() {
-  if (isAppleInside(snake.cells[snake.cells.length - 1].x, snake.cells[snake.cells.length - 1].y)) {
+  if (isAppleInside(snake.cells[snake.cells.length - 1].x,
+    snake.cells[snake.cells.length - 1].y)) {
     snake.move();
     game.getFood(snake.cells);
   } else {
@@ -124,7 +125,9 @@ const Play = () => {
     snake.direction = Direction.RIGHT;
     snake.gameOver = false;
     snake.won = false;
-    snake.cells = [new Cell(0, 0), new Cell(1, 0), new Cell(2, 0), new Cell(3, 0)];
+    snake.cells = [
+      new Cell(0, 0), new Cell(1, 0), new Cell(2, 0), new Cell(3, 0)
+    ];
   }
 
   setTimeout(() => {
