@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ainika-kos.github.io/snake",
-  "name": "blog",
+  "homepage": "http://ainika-kos.github.io/React_Snake",
+  "name": "snake",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
